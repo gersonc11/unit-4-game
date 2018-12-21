@@ -1,0 +1,88 @@
+body {
+	background-image: url("../images/background.jpg");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: solid 1px black;
+    font-family: garamond;
+}
+
+h1 {
+    text-align: center;
+    color: azure;
+}
+
+span {
+    color: red;
+}
+
+.boxes {
+	height: 100%;
+	text-align: center;
+	font-size: 30px;
+	color: azure;
+}
+
+#one {
+	height: 80px;
+    margin: 20px 20px 0px 20px;
+}
+#two {
+	height: 200px;
+    margin: 10px 0px;
+}
+#sub {
+	height: 40px;
+    margin-top: 80px;
+}
+#names {
+    height: 50px;
+}
+#attack {
+	text-align: center;
+	height: 100%;
+}
+
+#newGame {
+	text-align: center;
+}
+#three {
+	height: 150px;
+	margin: 100px 30px 50px 30px;
+}
+
+#playerCharSelection{
+	height: 200px;
+	padding: 0px;
+}
+.playerCharPick{
+	width: 150px;
+	height: 150px;
+    border: 1px solid green;
+}
+
+#enemyCharSelection .col-md-3 {
+	height: 200px;
+	padding: 0px;
+}
+.enemyCharPick{
+	width: 150px;
+	height: 150px;  
+	border: 1px solid red;
+}
+.image {
+	max-width: 100%;
+	max-height: 100%;
+}
+button {
+	height: 100%;
+	font-family: "Garamond";
+}
+
+.health {
+	position:absolute;
+	font-family: "Garamond";
+	bottom: -70px;
+    left: 50px;
+    color: white;
+    line-height:30px;
+}

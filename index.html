@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Star Wars RPG</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		<h1>Star <span>Wars</span> RPG</h1>
+		<div class = "row" id = "one">
+			<div class = "col-lg-4">
+			</div>
+			<div class = "col-lg-4 boxes" id = "result">
+			</div>
+			<div class = "col-lg-4">
+			</div>
+		</div>
+
+		<div class = "row" id = "names">
+			<div class = "col-lg-3">
+			</div>
+			<div class = "col-lg-2 boxes" id="playerName"></div>
+			<div class = "col-lg-2">
+			</div>
+			<div class = "col-lg-2 boxes" id="enemyName"></div>
+			<div class = "col-lg-3">
+			</div>
+
+		</div>
+
+		<div class = "row" id = "two">
+			<div class = "col-lg-3">
+			</div>
+			<div hidden class = "col-lg-2 boxes" id="playerCharArea">
+				<div class = "health" id = "playerHealth"></div>
+			</div>
+			<div class = "col-lg-2">
+				<div class = "row" id = "sub">
+					<div class = "col-lg-3">
+					</div>
+					<div hidden class = "col-lg-6" id = "attack">
+						<button class = "btn btn-default attack">Attack</button>
+					</div>
+					<div class = "col-lg-3">
+					</div>
+				</div>
+			</div>
+			<div hidden class = "col-lg-2 boxes" id="enemyCharArea">
+				<div class = "health" id = "enemyHealth"></div>
+			</div>
+			<div class = "col-lg-3">
+			</div>
+		</div>
+
+		<div class = "row" id = "three">
+			<div class = "col-lg-5 boxes">
+				<div class = "row" id = "playerCharSelection">
+					<div class = "col-lg-3 boxes">
+						<img src="../images/Obi.jpg" class="playerCharPick" data-obj="obi">
+					</div>
+					<div class = "col-lg-3 boxes">
+						<img src="../images/Luke.jpg" class="playerCharPick" data-obj="luke">
+					</div>
+					<div class = "col-lg-3 boxes">
+						<img src="../images/Sidious.jpg" class="playerCharPick" data-obj="sidious">
+					</div>
+					<div class = "col-lg-3 boxes">
+						<img src="../images/Maul.jpg" class="playerCharPick" data-obj="maul">
+					</div>
+				</div>
+
+			</div>
+			<div class = "col-lg-2" id="newGame">
+				<button class = "btn btn-default newGame">New Game</button>
+			</div>
+			<div class = "col-lg-5 boxes">
+				<div class = "row" id = "enemyCharSelection">
+					<div class = "col-lg-3 boxes">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript/game.js"></script>
+	</body>
+
+</html>
