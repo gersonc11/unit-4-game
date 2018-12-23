@@ -85,55 +85,47 @@ $(document).ready(function() {
 	});
 
 	$(".attack").on("click", function() {
-		// Player attacks enemy, enemy loses health equal to player attk
-		// Player attack increases by base amount
-		// If enemy is not dead, enemy counter attacks, player loses health equal to enemy counter attk
 		if (enemyBattling == true) {
-
 			enemyPick.health -= charPick.attack;
 			charPick.attack += charPick.baseAttack;
 			updateEnemyStats();
 
-			if (enemyPick.health <= 0) { //Checks to see if enemy has been defeated
+			if (enemyPick.health <= 0) { 
 				$("#enemyChar").remove();
 				$("#enemyName").html("");
 				$("#enemyHealth").html("");
 				enemyBattling = false;
-				if (enemies.length == 3) { //Once all 3 enemies have been fought
+				if (enemies.length == 3) {
 					var enemyLiving = false;
 					for (i=0; i<enemies.length;i++) {
 						if (enemies[i].health > 0) {
 							enemyLiving = true;
 						}
 					}
-					if (enemyLiving == false) { //Once all 3 enemies have 0 health
+					if (enemyLiving == false) {
 						playerWon = true;
 						$("#result").html("Player 1 Wins!");
 						$(".attack").hide();
 					}
 				}
 			}
-
 			else {
 				charPick.health -= enemyPick.counterAttack;
 				updatePlayerStats();
-					if (charPick.health <= 0) { //Checks to see if player has been defeated
+					if (charPick.health <= 0) {
 						playerLoss = false;
-						$("#result").html("CPU Wins");
+						$("#result").html("Computer Wins");
 						$(".attack").hide();
 					}
 			}
-			
 		}
 		else {
-			alert("Please select another enemy");
+			alert("Select an Enemy");
 		}
 	});
-
 	$(".newGame").on("click", function() {
 		location.reload();
 	});
-
 	function updatePlayerStats() {
 		$("#playerHealth").html("HP: " + charPick.health + "<br />Attack: " + charPick.attack);
 		$("#playerName").html(charPick.display);
@@ -142,5 +134,4 @@ $(document).ready(function() {
 		$("#enemyHealth").html("HP: " + enemyPick.health + "<br />Attack: " + enemyPick.attack);
 		$("#enemyName").html(enemyPick.display);
 	}
-
 })
