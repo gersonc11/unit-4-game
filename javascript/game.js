@@ -15,9 +15,9 @@ $(document).ready(function() {
 		attack: 10,
 		baseAttack: 10,
 		counterAttack: 12,
-		characterSelect: "../images/Obi.jpg",
-		playCharSelect: "../images/Obi.jpg",
-		enemyCharSelect: "../images/Obi.jpg"
+		characterSelect: "images/Obi.jpg",
+		playCharSelect: "images/Obi.jpg",
+		enemyCharSelect: "images/Obi.jpg"
 	}
 	var luke = {
 		name: "luke",
@@ -26,9 +26,9 @@ $(document).ready(function() {
 		attack: 12,
 		baseAttack: 12,
 		counterAttack: 15,
-		characterSelect: "../images/Luke.jpg",
-		playCharSelect: "../images/Luke.jpg",
-		enemyCharSelect: "../images/Luke.jpg"
+		characterSelect: "images/Luke.jpg",
+		playCharSelect: "images/Luke.jpg",
+		enemyCharSelect: "images/Luke.jpg"
 	}
 	var sidious = {
 		name: "sidious",
@@ -37,9 +37,9 @@ $(document).ready(function() {
 		attack: 16,
 		baseAttack: 16,
 		counterAttack: 20,
-		characterSelect: "../images/Sidious.jpg",
-		playCharSelect: "../images/Sidious.jpg",
-		enemyCharSelect: "../images/Sidious.jpg"
+		characterSelect: "images/Sidious.jpg",
+		playCharSelect: "images/Sidious.jpg",
+		enemyCharSelect: "images/Sidious.jpg"
 	}
 	var maul = {
 		name: "maul",
@@ -48,9 +48,9 @@ $(document).ready(function() {
 		attack: 5,
 		baseAttack: 5,
 		counterAttack: 14,
-		characterSelect: "../images/Maul.jpg",
-		playCharSelect: "../images/Maul.jpg",
-		enemyCharSelect: "../images/Maul.jpg"
+		characterSelect: "images/Maul.jpg",
+		playCharSelect: "images/Maul.jpg",
+		enemyCharSelect: "images/Maul.jpg"
 	}
 
 	var characters = [obi, luke, sidious, maul];
